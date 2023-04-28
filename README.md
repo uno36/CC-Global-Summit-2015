@@ -178,7 +178,7 @@ If you like this project dont hesitate to contact me
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank cindy shin for such astounding work. this website is based on her conference page template
+I would like to thank cindy shin for such astounding work. this website is based on her conference page template, find it here [Cindy Shin](https://www.behance.net/adagio07) the [author of the original design](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015), as required by the [Creative Commons License](https://creativecommons.org/licenses/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -188,17 +188,9 @@ I would like to thank cindy shin for such astounding work. this website is based
 
 
 
-- **What is the purpose of a website like this one?**
+- **What is the purpose of a cc Global Summit?**
 
-Firstly, it provides information and resources to member states, tourism stakeholders, and the general public on the UNWTO's efforts to promote sustainable tourism practices around the world. This includes information on the UNWTO's various programs and initiatives, research and reports on tourism trends and issues, and best practices in sustainable tourism development.
-
-Secondly, the UN tourism site serves as a platform for member states to connect and collaborate on tourism-related issues, including promoting responsible tourism practices, facilitating travel, and developing tourism infrastructure.
-
-Thirdly, the UN tourism site acts as a resource for travelers seeking information on sustainable tourism practices, responsible travel options, and other relevant information related to travel and tourism.
-
-Finally, the UN tourism site plays a role in raising awareness of the importance of sustainable tourism practices, promoting tourism as a means of promoting economic development and cultural exchange, and advocating for policies and initiatives that support sustainable tourism development worldwide.
-
-Overall, the purpose of the UN tourism site is to promote sustainable tourism practices, facilitate collaboration and knowledge-sharing among member states and stakeholders, and provide information and resources to support responsible travel and tourism.
+A joyful celebration believing in the value of openness and sharing, creating a positive change with people from over 80 countries is taking place in October, in Korea.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

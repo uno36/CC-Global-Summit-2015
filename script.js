@@ -82,6 +82,7 @@ function display() {
           <div><img class="speaker-img" src="${speakers[i].img}" alt=""></div>
           <div><h3 class="name">${speakers[i].name}</h3>
           <p class="profession">${speakers[i].profession}</p>
+          <hr class="speaker-hr">
           <p class="bio">${speakers[i].bio}</p>
           </div>
     </article>
@@ -137,11 +138,12 @@ Speakers.appendChild(gridContainers);
 function displayspeakers() {
   let displayCards = '';
   for (let i = 0; i < speakers.length; i += 1) {
-    displayCards += `
-          <article class="speaker ">
+    displayCards += `    
+        <article class="speaker ">
         <div><img class="speaker-img" src="${speakers[i].img}" alt=""></div>
         <div><h3 class="name">${speakers[i].name}</h3>
         <p class="profession">${speakers[i].profession}</p>
+        <hr class="speaker-hr">
         <p class="bio">${speakers[i].bio}</p>
         </div>
       </article>
