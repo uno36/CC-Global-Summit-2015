@@ -577,12 +577,14 @@ nav .drop-from-top {
     background-repeat: no-repeat;
     height: 242px;
     margin-top: 60px;
+    background-size: 100%;
   }
 
   .footer-home-img2 {
     display: grid;
     grid-template-columns: 0.5fr 1fr;
-    margin: 40px 120px;
+    margin: 40px 80px;
+  
   }
 
   .cck-home {
