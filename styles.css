@@ -13,6 +13,11 @@ header {
   position: fixed;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   z-index: 999;
+  top: 0;
+}
+
+.main {
+  padding: 110px 30px;
 }
 
 .top-nav {
@@ -64,36 +69,10 @@ nav .mobile-menu {
 nav .drop-from-top li a {
   display: inline-block;
   padding: 15px;
-
-  .about {
-    padding-top: 70px;
-  }
-
-  .about-title {
-    margin-top: -40px;
-  }
-
-  .about-title,
-  .about-title2 {
-    text-align: center;
-  }
-
-  .about_bg {
-    background-image: url("images/about_bg.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    height: 164px;
-    background-color: rgba(247, 247, 248, 1);
-  }
-
   text-decoration: none;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 1);
-  font-family:
-    'Lato',
-    Arial,
-    Helvetica,
-    sans-serif;
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
   font-size: 14px;
   font-weight: 800;
   line-height: 17px;
@@ -263,6 +242,7 @@ legend {
   letter-spacing: 0.06em;
   text-align: left;
   color: rgba(255, 255, 255, 1);
+
 }
 
 .section2 h1 {
@@ -284,54 +264,19 @@ legend {
   background-color: #ff5438;
   border: none;
   padding: 20px 50px 20px 50px;
-  margin-left: 35px;
-  margin-top: 30px;
+  align-items: center;
+  display: block;
+  margin: auto;
+}
+
+.button1 {
+  margin-top: 50px;
 }
 
 .article-button:hover {
   color: rgba(0, 0, 0, 1);
   background-color: rgba(255, 255, 255, 1);
 }
-
-/* about page */
-
-.main {
-  padding: 120px 30px;
-}
-
-.legend {
-  padding-top: 70px;
-  font-family: 'Gothic A1', Arial, Helvetica, sans-serif;
-  font-size: 28px;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  text-align: center;
-}
-
-.sustainable {
-  width: 100%;
-  height: 250px;
-  filter: hue-rotate(120deg);
-  color: #ff5438;
-}
-
-.sustainable2 {
-  position: relative;
-  top: 80px;
-}
-
-.logos {
-  width: 100%;
-  height: 216px;
-  margin-top: 1050px;
-}
-
-.flags {
-  width: 100%;
-  height: 216px;
-}
-
-/* about page */
 
 nav .drop-from-top {
   height: 100vh;
@@ -354,13 +299,6 @@ nav .drop-from-top {
   top: 20px;
   right: 20px;
   color: rgb(255, 255, 255);
-}
-
-.abt-logo {
-  background-image: url("images/about_logo_1.png");
-  margin-top: 50px;
-  margin-left: -40px;
-  height: 142px;
 }
 
 .speakers {
@@ -430,6 +368,10 @@ nav .drop-from-top {
   margin-top: 30px;
   text-transform: uppercase;
   border: none;
+  margin-bottom: 40px;
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(217, 217, 217, 1);
+  border-radius: 4px;
 }
 
 .more:hover {
@@ -438,23 +380,23 @@ nav .drop-from-top {
   transform: scale(1.05);
 }
 
-.flags2 {
-  margin-top: 40px;
-}
 
 @media only screen and (max-width: 768px) {
+
   .desktop-nav,
   .desk-description,
   #speaker-container,
   .about-description,
   .top-nav,
   .see,
-  .Speakers {
+  .Speakers,
+  .footer-home-img2 {
     display: none;
   }
 }
 
 @media only screen and (min-width: 768px) {
+
   .hamburger,
   .article-button,
   .more,
@@ -507,11 +449,12 @@ nav .drop-from-top {
   }
 
   .desktop-home-bg {
-    background-image: url("images/bg_img.jpg");
+    background-image: url("images/desktop-about-bg_img.jpg");
     background-repeat: no-repeat;
     height: 1587px;
   }
 
+  
   .main {
     padding: 192px 240px;
   }
@@ -615,23 +558,7 @@ nav .drop-from-top {
     text-align: left;
   }
 
-  .flags {
-    width: 100%;
-    height: 500px;
-  }
-
-  .sustainable {
-    height: 500px;
-    margin-top: 30px;
-    margin-bottom: 50px;
-  }
-
-  #flagz {
-    width: 100%;
-    height: 500px;
-    margin-top: 500px;
-  }
-
+  
   .speaker-hr {
     width: 25px;
     border: 2px solid #d9d9d9;
@@ -651,4 +578,45 @@ nav .drop-from-top {
     font-size: 30px;
     line-height: 28px;
   }
+
+  .footer-home-img1 {
+    background-image: url("images/Partners-home.png");
+    background-repeat: none;
+    height: 242px;
+    margin-top: 60px;
+  }
+
+  .footer-home-img2 {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    margin: 40px 120px;
+  }
+
+  .cck-home {
+    margin-left: 90px;
+  }
+
+  .span-home {
+    font-family: 'Lato'Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -0.01em;
+    text-align: left;
+
+  }
+
+  .last-line2-home {
+    font-family: 'Lato',Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -0.04em;
+    text-align: left;
+
+  }
+  .quote-div{
+    margin-top: -5%;
+  }
+
 }
