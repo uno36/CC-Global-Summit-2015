@@ -24,9 +24,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Tourism site <a name="about-project"></a>
+# 📖 CC Global Summit <a name="about-project"></a>
 
-**Tourism site** is a summary of  my achievements
+**CC Global Summit** is a summary of  my achievements
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -57,7 +57,7 @@
 
 
 
-- [Live Demo Link](https://uno36.github.io/tourism-site)
+- [Live Demo Link](https://uno36.github.io/CC-Global-Summit-2015)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
