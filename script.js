@@ -82,6 +82,7 @@ function display() {
           <div><img class="speaker-img" src="${speakers[i].img}" alt=""></div>
           <div><h3 class="name">${speakers[i].name}</h3>
           <p class="profession">${speakers[i].profession}</p>
+          <hr class="speaker-hr">
           <p class="bio">${speakers[i].bio}</p>
           </div>
     </article>
@@ -100,7 +101,6 @@ function display() {
       numDisplayed = speakers.length;
       display();
       moreBtn.remove();
-      gridContainer.innerHTML += '<button class="less">Less &nbsp&nbsp<i class="fa-solid fa-angle-up"></i></button>';
     });
   }
 
@@ -121,9 +121,6 @@ function display() {
       if (bio.classList.contains('show')) {
         bio.classList.remove('show');
         btn.innerHTML = 'More &nbsp&nbsp<i class="fa-solid fa-angle-down"></i>';
-      } else {
-        bio.classList.add('show');
-        btn.innerHTML = 'Less &nbsp&nbsp<i class="fa-solid fa-angle-up"></i>';
       }
     });
   });
@@ -141,11 +138,12 @@ Speakers.appendChild(gridContainers);
 function displayspeakers() {
   let displayCards = '';
   for (let i = 0; i < speakers.length; i += 1) {
-    displayCards += `
-          <article class="speaker ">
+    displayCards += `    
+        <article class="speaker ">
         <div><img class="speaker-img" src="${speakers[i].img}" alt=""></div>
         <div><h3 class="name">${speakers[i].name}</h3>
         <p class="profession">${speakers[i].profession}</p>
+        <hr class="speaker-hr">
         <p class="bio">${speakers[i].bio}</p>
         </div>
       </article>

@@ -13,6 +13,43 @@ header {
   position: fixed;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   z-index: 999;
+  top: 0;
+}
+
+.main {
+  padding: 110px 30px;
+}
+
+.top-nav {
+  background-color: rgba(62, 62, 62, 1);
+  width: 1768px;
+  height: 30px;
+}
+
+.nav-list a {
+  text-decoration: none;
+}
+
+nav .nav-list {
+  list-style-type: none;
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+  margin-left: 1200px;
+}
+
+.nav-item1 {
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+}
+
+.nav-item1:hover {
+  cursor: pointer;
+  color: #ff5438;
+  transform: scale(1.08);
 }
 
 nav {
@@ -39,6 +76,13 @@ nav .drop-from-top li a {
   font-size: 14px;
   font-weight: 800;
   line-height: 17px;
+}
+
+.speaker-hr {
+  width: 18px;
+  border: 1px solid #d9d9d9;
+  margin-left: 2px;
+  margin-top: -7px;
 }
 
 .menu-item a:hover {
@@ -69,21 +113,15 @@ nav .drop-from-top li a {
   margin-top: 100px;
 }
 
-
 .icons i:hover {
   color: #ff5438;
 }
 
-.logo {
-  position: relative;
-  background-image: url("images/World_Tourism_Organization_Logo.png");
-  background-repeat: no-repeat;
-  background-size: 50px;
-  height: 50px;
-  margin-left: 180px;
-  filter: hue-rotate(150deg);
-  color: orangered;
-  top: 10px;
+.logo a img {
+  width: 130px;
+  height: 51px;
+  margin-left: 150px;
+  padding-top: 10px;
 }
 
 .hamburger {
@@ -105,26 +143,29 @@ nav .drop-from-top li a {
   background-color: dimgray;
 }
 
-.main {
-  padding: 80px 30px;
-}
-
-.description {
+.main-description {
   border: 4px solid rgb(255, 255, 255);
   padding: 10px;
   margin-top: 30px;
-  text-align: center;
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: -0.01em;
+  text-align: left;
+  color: rgba(81, 81, 81, 1);
 }
 
 .title {
   font-size: 15px;
-  margin-bottom: -25px;
+  margin-bottom: -20px;
   color: #ff5438;
 }
 
 .title2 {
+  margin-bottom: 10px;
   color: transparent;
-  font-size: 30px;
+  font-family: 'Gothic A1', Arial, Helvetica, sans-serif;
+  font-size: 25px;
   font-weight: 900;
   -webkit-background-clip: text;
   background-image: url("images/orangebg.jpg");
@@ -142,23 +183,37 @@ nav .drop-from-top li a {
   font-size: 25px;
   font-weight: 900;
   line-height: 1em;
-  color: dimgray;
+  color: rgba(89, 89, 89, 1);
+  font-family: 'Gothic A1', Arial, Helvetica, sans-serif;
+  letter-spacing: -0.08em;
+  text-align: left;
+  margin-top: 40px;
 }
 
 legend {
-  font-size: 15px;
+  color: rgba(134, 134, 134, 1);
+  font-family: 'Gothic A1', Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: -0.05em;
+  text-align: left;
 }
 
 .section2 {
+  padding: 20px 0;
   margin-top: -148px;
+}
+
+.section-2 {
+  border: 2px solid rgba(160, 64, 56, 1);
+  width: 51px;
+  margin-top: -5px;
+  margin-bottom: 30px;
 }
 
 .articles article {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  font-size: 10px;
-  color: orangered;
-  line-height: 22.3px;
+  grid-template-columns: 0.4fr 0.5fr 1fr;
   margin-bottom: 10px;
   margin-left: 10px;
   margin-right: 10px;
@@ -168,11 +223,35 @@ legend {
   background-color: rgba(59, 62, 69, 0.3);
 }
 
-.section2 h1 {
-  font-size: 30px;
+.text2 {
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -0.01em;
+  text-align: left;
+  color: rgba(255, 84, 56, 1);
+  margin-top: 15px;
+}
+
+.text1 {
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0.06em;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+}
+
+.section2 h2 {
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: -0.04em;
   text-align: center;
-  color: white;
-  padding-top: 20px;
+  color: rgb(255, 255, 255, 1);
 }
 
 .article-button {
@@ -183,97 +262,20 @@ legend {
   color: white;
   background-color: #ff5438;
   border: none;
-  padding: 10px;
-  margin-top: 10px;
-  margin-left: 40%;
+  padding: 20px 50px 20px 50px;
+  align-items: center;
+  display: block;
+  margin: auto;
+}
+
+.button1 {
+  margin-top: 50px;
 }
 
 .article-button:hover {
   color: rgba(0, 0, 0, 1);
   background-color: rgba(255, 255, 255, 1);
 }
-
-/* about page */
-.about {
-  padding-top: 70px;
-}
-
-.about-title {
-  margin-top: -40px;
-}
-
-.about-title,
-.about-title2 {
-  text-align: center;
-}
-
-.about_bg {
-  background-image: url("images/about_bg.png");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  height: 164px;
-  background-color: rgba(247, 247, 248, 1);
-}
-
-.about-description {
-  margin-top: 90px;
-  text-align: center;
-  border: none;
-}
-
-.about-logo {
-  background-image: url("https://www.unwto.org/themes/unwto/images/SDGs_goals-en.svg");
-  background-repeat: no-repeat;
-  background-color: rgba(40, 43, 50, 0.3);
-  background-size: 100%;
-  height: 100px;
-}
-
-.about-logo1 {
-  margin-left: 180px;
-}
-
-.legend {
-  padding-top: 70px;
-}
-
-.sustainable {
-  width: 100%;
-  height: 250px;
-  filter: hue-rotate(120deg);
-  color: #ff5438;
-}
-
-.sustainable2 {
-  position: relative;
-  top: 80px;
-}
-
-.quote {
-  position: relative;
-  margin-top: -200px;
-  text-align: center;
-  color: white;
-  font-size: 25px;
-  font-family: 'Lato', Arial, Helvetica, sans-serif;
-}
-
-.quote2 {
-  margin-top: -120px;
-}
-
-.logos {
-  width: 100%;
-  height: 216px;
-  margin-top: 1050px;
-}
-
-.flags {
-  width: 100%;
-  height: 216px;
-}
-
-/* about page */
 
 nav .drop-from-top {
   height: 100vh;
@@ -284,7 +286,7 @@ nav .drop-from-top {
   left: 0;
   z-index: 10;
   flex-direction: column;
-  padding-top: 50px;
+  padding-top: 30px;
   background-color: rgba(65, 66, 70, 1);
   transition: top 1s ease 0s;
   display: none;
@@ -298,24 +300,19 @@ nav .drop-from-top {
   color: rgb(255, 255, 255);
 }
 
-.abt-logo {
-  margin-top: 50px;
-  margin-left: -40px;
-}
-
 .speakers {
-  margin-top: 80px;
+  margin-top: 30px;
   margin-left: 10px;
   margin-right: 10px;
 }
 
 .featured-speakers {
-  text-align: center;
   font-family: 'Lato', Arial, Helvetica, sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
   letter-spacing: -0.05em;
+  text-align: center;
 }
 
 .speaker {
@@ -369,7 +366,10 @@ nav .drop-from-top {
   width: 100%;
   margin-top: 30px;
   text-transform: uppercase;
-  border: none;
+  margin-bottom: 40px;
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(217, 217, 217, 1);
+  border-radius: 4px;
 }
 
 .more:hover {
@@ -378,15 +378,15 @@ nav .drop-from-top {
   transform: scale(1.05);
 }
 
-.flags2 {
-  margin-top: 40px;
-}
-
 @media only screen and (max-width: 768px) {
   .desktop-nav,
   .desk-description,
   #speaker-container,
-  .about-description {
+  .about-description,
+  .top-nav,
+  .see,
+  .Speakers,
+  .footer-home-img2 {
     display: none;
   }
 }
@@ -395,20 +395,30 @@ nav .drop-from-top {
   .hamburger,
   .article-button,
   .more,
-  .description,
+  .main-description,
   .speakers {
     display: none;
   }
 
   .nav li {
     display: inline-block;
-    padding: 15px;
-    text-transform: uppercase;
+    padding: 10px;
     color: rgba(255, 255, 255, 1);
     font-family: 'Lato', Arial, Helvetica, sans-serif;
     font-size: 14px;
     font-weight: 800;
     line-height: 17px;
+    margin-top: 10px;
+  }
+
+  #nav-link1 {
+    border: 4px solid rgba(236, 67, 39, 1);
+    color: rgba(236, 67, 39, 1);
+  }
+
+  .see a {
+    color: rgb(255, 255, 255, 1);
+    text-decoration: underline;
   }
 
   .nav li a {
@@ -424,19 +434,19 @@ nav .drop-from-top {
   }
 
   header {
-    height: 80px;
+    height: 100px;
   }
 
   .nav {
     position: absolute;
     margin-left: 800px;
-    margin-top: -60px;
+    margin-top: -70px;
   }
 
   .desktop-home-bg {
-    background-image: url("images/bg_img.jpg");
+    background-image: url("images/desktop-about-bg_img.jpg");
     background-repeat: no-repeat;
-    height: 887px;
+    height: 1587px;
   }
 
   .main {
@@ -444,39 +454,66 @@ nav .drop-from-top {
   }
 
   .title {
-    font-size: 40px;
+    font-size: 25px;
   }
 
   .title2 {
-    font-size: 80px;
+    font-size: 60px;
+    margin-bottom: 60px;
   }
 
   .desk-description {
     border: 4px solid rgb(255, 255, 255);
     padding: 15px;
-    font-size: 18px;
+    font-size: 15px;
+    margin-bottom: 60px;
     width: 80%;
   }
 
   .dates {
-    font-size: 40px;
+    font-size: 30px;
+  }
+
+  .img1 {
+    margin-left: 70px;
   }
 
   .section2 {
-    margin-top: -200px;
+    margin-top: -900px;
     padding-top: 50px;
-    height: 587px;
+    height: 487px;
+  }
+
+  .articles article {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 
   .article1 {
     display: flex;
-    width: 200px;
-    margin-top: 70px;
-    margin-left: 10%;
+    margin-top: 50px;
+    margin-left: 150px;
+    margin-right: 150px;
   }
 
   .text1 {
-    grid-column: 1;
+    text-align: center;
+  }
+
+  .text2 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .section-2 {
+    margin-top: 20px;
+    width: 51px;
+  }
+
+  .section2 .heading2 {
+    font-size: 30px;
+    color: white;
+    text-align: center;
   }
 
   #speaker-container {
@@ -517,46 +554,63 @@ nav .drop-from-top {
     text-align: left;
   }
 
-  .flags {
-    width: 100%;
-    height: 500px;
+  .speaker-hr {
+    width: 25px;
+    border: 2px solid #d9d9d9;
+    margin-left: 2px;
+    margin-top: -5px;
   }
 
-  .about_bg {
-    margin-top: 10px;
-    height: 723px;
+  .hr-desk {
+    margin-top: 100px;
+    margin-bottom: 80px;
+    border: 2px solid rgba(224, 226, 231, 1);
   }
 
-  .about-description {
-    background-color: rgba(255, 255, 255, 1);
-    text-align: center;
+  .quote1 {
     font-family: 'Lato', Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 25px;
-    letter-spacing: 0;
-    padding: 25px;
-    margin-top: 25px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 28px;
   }
 
-  .about-logo {
-    margin-top: 200px;
-    height: 200px;
+  .footer-home-img1 {
+    background-image: url("images/Partners-home.png");
+    background-repeat: no-repeat;
+    height: 242px;
+    margin-top: 60px;
+    background-size: 100%;
   }
 
-  .legend {
-    padding-top: 150px;
+  .footer-home-img2 {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    margin: 40px 80px;
   }
 
-  .sustainable {
-    height: 500px;
-    margin-top: 30px;
-    margin-bottom: 50px;
+  .cck-home {
+    margin-left: 90px;
   }
 
-  #flagz {
-    width: 100%;
-    height: 500px;
-    margin-top: 500px;
+  .span-home {
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -0.01em;
+    text-align: left;
+  }
+
+  .last-line2-home {
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -0.04em;
+    text-align: left;
+  }
+
+  .quote-div {
+    margin-top: -5%;
   }
 }
