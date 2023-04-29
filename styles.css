@@ -242,7 +242,6 @@ legend {
   letter-spacing: 0.06em;
   text-align: left;
   color: rgba(255, 255, 255, 1);
-
 }
 
 .section2 h1 {
@@ -367,7 +366,6 @@ nav .drop-from-top {
   width: 100%;
   margin-top: 30px;
   text-transform: uppercase;
-  border: none;
   margin-bottom: 40px;
   background-color: rgba(255, 255, 255, 1);
   border: 1px solid rgba(217, 217, 217, 1);
@@ -380,9 +378,7 @@ nav .drop-from-top {
   transform: scale(1.05);
 }
 
-
 @media only screen and (max-width: 768px) {
-
   .desktop-nav,
   .desk-description,
   #speaker-container,
@@ -396,7 +392,6 @@ nav .drop-from-top {
 }
 
 @media only screen and (min-width: 768px) {
-
   .hamburger,
   .article-button,
   .more,
@@ -454,7 +449,6 @@ nav .drop-from-top {
     height: 1587px;
   }
 
-  
   .main {
     padding: 192px 240px;
   }
@@ -558,7 +552,6 @@ nav .drop-from-top {
     text-align: left;
   }
 
-  
   .speaker-hr {
     width: 25px;
     border: 2px solid #d9d9d9;
@@ -581,7 +574,7 @@ nav .drop-from-top {
 
   .footer-home-img1 {
     background-image: url("images/Partners-home.png");
-    background-repeat: none;
+    background-repeat: no-repeat;
     height: 242px;
     margin-top: 60px;
   }
@@ -597,26 +590,24 @@ nav .drop-from-top {
   }
 
   .span-home {
-    font-family: 'Lato'Arial, Helvetica, sans-serif;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
     font-size: 14px;
     font-weight: 700;
     line-height: 28px;
     letter-spacing: -0.01em;
     text-align: left;
-
   }
 
   .last-line2-home {
-    font-family: 'Lato',Arial, Helvetica, sans-serif;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
     font-size: 14px;
     font-weight: 700;
     line-height: 28px;
     letter-spacing: -0.04em;
     text-align: left;
-
   }
-  .quote-div{
+
+  .quote-div {
     margin-top: -5%;
   }
-
 }
